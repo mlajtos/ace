@@ -1,0 +1,37 @@
+# if else
+snippet ife
+	if (${1:true}) {
+		${2}
+	} else {
+		${0}
+	}
+
+# for
+snippet for
+	for (${1:in}) {
+		${2:out}[forkey] = forval;
+	}
+
+# while
+snippet whi
+	${1:tmp/i} = 0;
+	while (${1} < ${2:10}) {
+		${3:// code}
+		${1} = ${1} + 1;
+	}
+
+# module operation call
+snippet $
+	\$${1:module}.${2:operation}{
+		${3}
+	};
+
+# getContent
+snippet getContent
+	\$${1:modulePath}.getContent{
+		/urlPath = in/urlPath/${2:moduleName};
+		/urlContext[in/urlContext]/${2} = null;
+		/paramTree = in/paramTree/${2};
+		/sessionTree = in/sessionTree/${2};
+		/dataTree = in/dataTree;
+	};
