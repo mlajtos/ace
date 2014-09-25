@@ -1,5 +1,107 @@
+snippet str.contains
+	str.contains{
+		/string = ${1};
+		/substring = ${2};
+		/ignoreCase = true;
+	};
+
+snippet str.endsWith
+	str.endsWith{
+		/string = ${1};
+		/suffix= ${2};
+	};
+
+snippet str.extractDiacritics
+	str.extractDiacritics(${1});
+
+snippet str.format
+	str.format{
+		/string = ${1};
+		/params = {
+			${2}
+	 	};
+	 };
+
+snippet str.find
+	str.find{ 
+		/string =  ${1}; 
+		/regex = ${2}; 
+	};
+
+snippet str.hashMD5
+	str.hashMD5(${1});
+
+snippet str.hashSHA1
+	str.hashSHA1(${1});
+
+snippet str.htmlEncode
+	str.htmlEncode(${1});
+
+snippet str.initCap
+	str.initCap(${1});
+
+snippet str.join
+	str.join{
+		/strings = ${1};
+		/delimiter = ${2};
+	};
+
+snippet str.length
+	str.length(${1});
+
+snippet str.justify
+	str.justify{
+		/string = ${1};
+		/length = ${2};
+		/char = ${3};
+		/type/center = ${4:true};
+	};
+
+snippet str.replace
+	str.replace{
+		/string = ${1};
+		/regex = ${3};
+		/replacement = ${2};
+	};
+
+snippet str.split
+	str.split{
+		/string = ${1};
+		/regex = ${2};
+	};
+
+snippet str.replaceParams
+	str.replaceParams{
+		/string = ${1};
+		/params{
+			${2}
+		};
+	};
+
+snippet str.substring
+	str.substring{
+		/string = ${1};
+		/beginIndex = ${2};
+		/endIndex = ${3};
+	};
+
+snippet str.toLowerCase
+	str.toLowerCase(${1});
+
+snippet str.toUpperCase
+	str.toUpperCase(${1});
+
+snippet str.trim
+	str.trim(${1});
+
+snippet str.startsWith
+	str.startsWith{
+		/string = ${1};
+		/prefix= ${2};
+	};
+
 # if else
-snippet ife
+snippet if
 	if (${1:true}) {
 		${2}
 	} else {
@@ -13,7 +115,7 @@ snippet for
 	}
 
 # while
-snippet whi
+snippet while
 	${1:tmp/i} = 0;
 	while (${1} < ${2:10}) {
 		${3:// code}
