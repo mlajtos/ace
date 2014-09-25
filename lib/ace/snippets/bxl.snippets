@@ -1,3 +1,284 @@
+
+# math agent
+
+snippet math.floor
+	math.floor(${1});
+
+snippet math.ceil
+	math.ceil(${1});
+
+snippet math.random
+	math.random();
+
+snippet math.round
+	math.round(${1});
+
+# is agent
+
+snippet is.module
+	is.module(${1});
+
+snippet is.subNodes
+	is.subNodes(${1});
+
+snippet is.typeBoolean
+	is.typeBoolean(${1});
+
+snippet is.typeDate
+	is.typeDate(${1});
+
+snippet is.typeDatetime
+	is.typeDatetime(${1});
+
+snippet is.typeDouble
+	is.typeDouble(${1});
+
+snippet is.typeDecimal
+	is.typeDecimal(${1});
+
+snippet is.typeInt
+	is.typeInt(${1});
+
+snippet is.typeLong
+	is.typeLong(${1});
+
+snippet is.typeNode
+	is.typeNode(${1});
+
+snippet is.typeString
+	is.typeString(${1});
+
+snippet is.typeTime
+	is.typeTime(${1});
+
+snippet is.typeValueNN
+	is.typeValueNN(${1});
+
+snippet is.valueNE
+	is.valueNE(${1});
+
+snippet is.valueDatetime
+	is.valueDatetime(${1});
+
+snippet is.valueDate
+	is.valueDate(${1});
+
+snippet is.valueTime
+	is.valueTime(${1});
+
+snippet is.valueBoolean
+	 is.valueBoolean(${1});
+
+snippet is.valueDouble
+	is.valueDouble(${1});
+
+snippet is.valueDoubleNZ
+	is.valueDoubleNZ(${1});
+
+snippet is.valueDecimal
+	is.valueDecimal(${1});
+
+snippet is.valueInt
+	is.valueInt(${1});
+
+snippet is.valueIntNZ
+	is.valueIntNZ(${1});
+
+snippet is.valueLong
+	is.valueLong(${1});
+
+snippet is.valuePathNE
+	is.valuePathNE(${1});
+
+snippet is.valueString
+	is.valueString(${1});
+
+snippet is.valueStringNE
+	is.valueStringNE(${1});
+
+# path agent
+
+snippet path.items
+	path.items(${1});
+
+snippet path.join
+	path.join(${1});
+
+snippet path.key
+	path.key(${1});
+
+snippet path.length
+	path.length(${1});
+
+snippet path.pathToTreeFocus
+	path.pathToTreeFocus(${1});
+
+snippet path.treeFocusToPath
+	path.treeFocusToPath(${1});
+
+snippet path.split
+	path.split{
+		/path = ${1};
+		/key = ${2};
+	};
+
+snippet path.keyAt
+	path.keyAt{
+		/path = ${1};
+		/index = ${2};
+	};
+
+snippet path.keyLast
+	path.keyLast(${1});
+
+snippet path.subPath
+	path.subPath{
+		/path = ${1};
+		/beginIndex = ${2};
+		/endIndex = ${3};
+	};
+
+snippet path.tail
+	path.tail(${1});
+
+snippet path.val
+	path.val(${1});
+
+snippet path.keyDelete
+	path.keyDelete{
+		/path = ${1};
+		/key = ${2};
+	};
+
+# date agent
+
+snippet date.add
+	date.add{
+		/datetime = ${1};
+		/year = ${2};
+		/month = ${3};
+		/day = ${4};
+		/hour = ${5};
+		/minute = ${6};
+		/second = ${7};
+	}
+
+snippet date.dateToStruct
+	date.dateToStruct(${1});
+
+snippet date.datetimeToStruct
+	date.datetimeToStruct(${1});
+
+snippet date.now
+	date.now();
+
+snippet date.parseDatetime
+	date.parseDatetime(${1});
+
+snippet date.parseDate
+	date.parseDate(${1});
+
+snippet date.parseTime
+	date.parseTime(${1});
+
+# tree agent
+
+snippet tree.add
+	tree.add{
+		/tree = ${1};
+		/add = ${2};
+	};
+
+snippet tree.count
+	tree.count(${1});
+
+snippet tree.dumpToBxl
+	tree.dumpToBxl(${1});
+
+snippet tree.dumpToString
+	tree.dumpToString(${1});
+
+snippet tree.keyDelete
+	tree.keyDelete{
+		/tree = ${1};
+		/key = ${2};
+	};
+
+snippet tree.keyFirst
+	tree.keyFirst(${1});
+
+snippet tree.keyLast
+	tree.keyLast(${1});
+
+snippet tree.keyMoveDown
+	tree.keyMoveDown{
+		/tree = ${1};
+		/key = ${2};
+		/cycle = true;
+	};
+
+snippet tree.keyMoveUp
+	tree.keyMoveUp{
+		/tree = ${1};
+		/key = ${2};
+		/cycle = true;
+	};
+
+snippet tree.keyNext
+	tree.keyNext{
+		/tree = ${1};
+		/key = ${2};
+		/cycle = true;
+	};
+
+snippet tree.keyPos
+	tree.keyPos{ 
+		/tree = ${1};
+		/key = ${2};
+	};
+
+snippet tree.keysDelete
+	tree.keysDelete{
+		/tree = ${1};
+		/keys = {
+			${2}
+		};
+	};
+
+snippet tree.pathDelete
+	tree.pathDelete{
+		/tree = ${1};
+		/path = {
+			${2}
+		};
+	};
+
+snippet tree.reverse
+	tree.reverse(${1});
+
+snippet tree.subtree
+	tree.subtree{
+		/tree = ${1};
+		/beginIndex = ${2};
+		/endIndex = ${3};
+	};
+
+snippet tree.keyInsert
+	tree.keyInsert{
+		/tree = ${1};
+		/key = ${2};
+		/addTree = ${3};
+		/afterKey = ${4};
+	};
+
+# str agent
+
+snippet str.base64decode
+	str.base64decode(${1})
+
+snippet str.base64encode
+	str.base64encode(${1})
+
 snippet str.contains
 	str.contains{
 		/string = ${1};
