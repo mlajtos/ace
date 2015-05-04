@@ -1,7 +1,7 @@
-var https = require("https")
-  , http = require("http")
-  , url = require("url")
-  , fs = require("fs");
+var https = require("https");
+var http = require("http");
+var url = require("url");
+var fs = require("fs");
 
 var Path = require("path");
 var spawn = require("child_process").spawn;
@@ -119,6 +119,26 @@ var deps = {
             });
         }
     },
+    vim: {
+        fetch: function(){
+            var rootHref = "https://raw.githubusercontent.com/codemirror/CodeMirror/master/"
+            var fileMap = {"keymap/vim.js": "keyboard/vim.js", "test/vim_test.js": "keyboard/vim_test.js"};
+            async.forEach(Object.keys(fileMap), function(x, next) {
+                download(rootHref + x, function(e, d) {
+                    d = d.replace(/^\(function.*{[^{}]+^}[^{}]+{/m, "define(function(require, exports, module) {");
+                    d = d.replace(/^\s*return vimApi;\s*};/gm, "  //};")
+                        .replace("var Vim = function() {", "$& return vimApi; } //{")
+                    fs.writeFile(rootDir + fileMap[x], d, next)
+                })
+            }, function() {
+                console.log("done")
+            });
+        }
+    },
+    liveScript: {
+        path: "mode/livescript.js",
+        url: "https://raw.githubusercontent.com/gkz/LiveScript/master/lib/mode-ls.js"        
+    },
     coffee: {
         fetch: function(){
             var rootHref = "https://raw.github.com/jashkenas/coffee-script/master/";
@@ -184,7 +204,24 @@ var deps = {
                 });
             }
         }
-    }
+    },
+    xmldom: {
+        fetch: function() {
+            var rootHref = "https://raw.githubusercontent.com/iDeBugger/xmldom/master/"
+            var fileMap = {
+               "sax.js": "mode/xml/sax.js",
+               "dom-parser.js": "mode/xml/dom-parser.js",
+               "dom.js": "mode/xml/dom.js"
+            };
+            async.forEach(Object.keys(fileMap), function(x, next) {
+                download(rootHref + x, function(e, d) {
+                    fs.writeFile(rootDir + fileMap[x], d, next)
+                })
+            }, function() {
+                console.log("XmlDOM updating done")
+            });
+        }
+    },
 };
 
 var download = function(href, callback) {
