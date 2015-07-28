@@ -381,6 +381,18 @@ snippet str.startsWith
 		/prefix= ${2};
 	};
 
+# server agent
+
+snippet server.getParam
+	server.getParam(${1});
+
+snippet server.session
+	server.session{
+		/context[${1:in/urlContext}] = null;
+		/operation = "${2:read}";
+		/tree = ${3:tmp/tree};
+	};
+
 # if else
 snippet if
 	if (${1:true}) {
