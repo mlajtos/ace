@@ -1,0 +1,147 @@
+.ace-bxl .ace_gutter {
+    background: #f0f0f0;
+    border-right: 1px solid #eee;
+    color: #8F908A;
+}
+
+/* BEGIN ??? */
+/*
+.ace-bxl .ace_print-margin {
+    width: 1px;
+    background: #555651
+}
+
+.ace-bxl .ace_marker-layer .ace_step {
+    background: rgb(102, 82, 0)
+}
+
+.ace-bxl .ace_invisible {
+    color: #52524d
+}
+
+
+.ace-bxl .ace_punctuation,
+.ace-bxl .ace_punctuation.ace_tag {
+    color: #fff
+}
+.ace-bxl .ace_constant.ace_character,
+.ace-bxl .ace_constant.ace_language,
+.ace-bxl .ace_constant.ace_numeric,
+.ace-bxl .ace_constant.ace_other {
+    color: #AE81FF
+}
+
+.ace-bxl .ace_invalid.ace_deprecated {
+    color: #F8F8F0;
+    background-color: #AE81FF
+}
+.ace-bxl .ace_support.ace_constant {
+    color: #66D9EF
+}
+
+.ace-bxl .ace_storage.ace_type,
+.ace-bxl .ace_support.ace_class,
+.ace-bxl .ace_support.ace_type {
+    font-style: italic;
+    color: #66D9EF
+}
+.ace-bxl .ace_entity.ace_name.ace_function,
+.ace-bxl .ace_entity.ace_other,
+.ace-bxl .ace_entity.ace_other.ace_attribute-name {
+    color: #A6E22E
+}
+*/
+/* END ??? */
+
+/* cursor */
+.ace-bxl .ace_cursor {
+    color: #666666;
+}
+
+.ace-bxl .ace_marker-layer .ace_selected-word {
+    border: 1px solid #666666;
+    border-radius: 1px;
+}
+
+/* active line */
+.ace-bxl .ace_marker-layer .ace_active-line,
+.ace-bxl .ace_gutter-active-line {
+    background: rgba(34, 170, 255, 0.10);
+}
+
+/* text selection */
+.ace-bxl .ace_marker-layer .ace_selection {
+    background: rgba(0, 120, 205, 0.15);
+}
+
+/* matching bracket marker */
+.ace-bxl .ace_marker-layer .ace_bracket {
+    margin: -1px 0 0 -1px;
+    border: 1px solid #666666;
+    border-radius: 1px;
+}
+
+/* comment keywords */
+.ace-bxl .ace_invalid {
+    color: #F8F8F0;
+    background-color: #F92626;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+}
+
+/* BXL code syntax colors */
+
+/* agent, operation */
+.ace-bxl .ace_support.ace_function {
+  color: #DD00DD;
+}
+
+/* folded code */
+.ace-bxl .ace_fold {
+    background-color: #A6E22E;
+    border-color: #F8F8F2
+}
+
+/* variable name */
+.ace-bxl .ace_variable {
+  color: #879EFA;
+  font-weight: bold;
+}
+
+/* reserved words */
+.ace-bxl .ace_keyword,
+.ace-bxl .ace_keyword.ace_control,
+.ace-bxl .ace_constant.ace_language {
+  color: #7F0055;
+  font-weight: bold;
+}
+
+/* tree node */
+.ace-bxl .ace_identifier.ace_tree{
+  color: #FF7F00;
+}
+
+/* replacable parameter */
+.ace-bxl .ace_variable.ace_parameter {
+    font-style: italic;
+    color: #FD971F
+}
+
+/* value literals */
+.ace-bxl .ace_constant.ace_numeric,
+.ace-bxl .ace_constant.ace_character,
+.ace-bxl .ace_string,
+.ace-bxl .ace_constant.ace_other {
+    color: blue;
+}
+
+/* comment */
+.ace-bxl .ace_comment {
+    color: #007F00;
+}
+
+/* indentation guide */
+.ace-bxl .ace_indent-guide {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ0FD0ZXBzd/wPAAjVAoxeSgrfdgNeAAAAAElFTkSuQmCC) right repeat-y
+
+}
