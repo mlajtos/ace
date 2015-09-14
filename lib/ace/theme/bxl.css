@@ -116,6 +116,12 @@
   font-weight: bold;
 }
 
+/* operators */
+.ace_keyword.ace_operator {
+    color: black;
+    font-weight: normal;
+}
+
 /* tree node */
 .ace-bxl .ace_identifier.ace_tree{
   color: #FF7F00;
@@ -124,7 +130,7 @@
 /* replacable parameter */
 .ace-bxl .ace_variable.ace_parameter {
     font-style: italic;
-    color: #FD971F
+    color: #009DFF;
 }
 
 /* value literals */
