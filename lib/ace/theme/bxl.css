@@ -148,6 +148,7 @@
 
 /* indentation guide */
 .ace-bxl .ace_indent-guide {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ0FD0ZXBzd/wPAAjVAoxeSgrfdgNeAAAAAElFTkSuQmCC) right repeat-y
-
+    border-right: 1px solid lightgray;
+    margin-right: -1px;
+    /* background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ0FD0ZXBzd/wPAAjVAoxeSgrfdgNeAAAAAElFTkSuQmCC) right repeat-y */ 
 }
