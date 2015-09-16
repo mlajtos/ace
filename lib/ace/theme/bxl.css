@@ -53,6 +53,13 @@
 */
 /* END ??? */
 
+.ace-bxl.ace_editor{
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 1em;
+}
+
 /* cursor */
 .ace-bxl .ace_cursor {
     color: #666666;
