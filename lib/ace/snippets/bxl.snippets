@@ -274,46 +274,46 @@ snippet tree.keyInsert
 # str agent
 
 snippet str.base64decode
-	str.base64decode(${1})
+	str.base64decode(${1:"QlhM"})
 
 snippet str.base64encode
-	str.base64encode(${1})
+	str.base64encode(${1:"Hello World!"})
 
 snippet str.contains
 	str.contains{
-		/string = ${1};
-		/substring = ${2};
+		/string = ${1:"hello world"};
+		/substring = ${2:"ello"};
 		/ignoreCase = true;
 	};
 
 snippet str.endsWith
 	str.endsWith{
-		/string = ${1};
-		/suffix= ${2};
+		/string = ${1:"Hello"};
+		/suffix= ${2:"lo"};
 	};
 
 snippet str.extractDiacritics
-	str.extractDiacritics(${1});
+	str.extractDiacritics(${1:"héľĺó wôřlď"});
 
 snippet str.format
 	str.format{
 		/string = ${1};
-		/params = {
+		/params{
 			${2}
-	 	};
-	 };
+		};
+	};
 
 snippet str.find
 	str.find{ 
-		/string =  ${1}; 
-		/regex = ${2}; 
+		/string = ${1:"hello world"}; 
+		/regex = ${2:"[a-z]"}; 
 	};
 
 snippet str.hashMD5
-	str.hashMD5(${1});
+	str.hashMD5(${1:"Hello World"});
 
 snippet str.hashSHA1
-	str.hashSHA1(${1});
+	str.hashSHA1(${1:"Hello World"});
 
 snippet str.htmlEncode
 	str.htmlEncode(${1});
@@ -328,7 +328,7 @@ snippet str.join
 	};
 
 snippet str.length
-	str.length(${1});
+	str.length(${1:"Hello World"});
 
 snippet str.justify
 	str.justify{
@@ -340,45 +340,45 @@ snippet str.justify
 
 snippet str.replace
 	str.replace{
-		/string = ${1};
-		/regex = ${3};
-		/replacement = ${2};
+		/string = ${1:"Hello World"};
+		/regex = ${3:"World"};
+		/replacement = ${2:"BXL"};
 	};
 
 snippet str.split
 	str.split{
-		/string = ${1};
-		/regex = ${2};
+		/string = ${1:"Hello World"};
+		/regex = ${2:" "};
 	};
 
 snippet str.replaceParams
 	str.replaceParams{
-		/string = ${1};
+		/string = ${1:"Hello %%param%%"};
 		/params{
-			${2}
+			/${2:param} = ${3:"world"};
 		};
 	};
 
 snippet str.substring
 	str.substring{
-		/string = ${1};
-		/beginIndex = ${2};
-		/endIndex = ${3};
+		/string = ${1:"Hello World"};
+		/beginIndex = ${2:0};
+		/endIndex = ${3:4};
 	};
 
 snippet str.toLowerCase
-	str.toLowerCase(${1});
+	str.toLowerCase(${1:"HELLO WORLD"});
 
 snippet str.toUpperCase
-	str.toUpperCase(${1});
+	str.toUpperCase(${1:"hello world"});
 
 snippet str.trim
-	str.trim(${1});
+	str.trim(${1:"   hello world   "});
 
 snippet str.startsWith
 	str.startsWith{
-		/string = ${1};
-		/prefix= ${2};
+		/string = ${1:"Hello World"};
+		/prefix= ${2:"Hell"};
 	};
 
 # server agent
