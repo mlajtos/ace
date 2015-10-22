@@ -159,3 +159,10 @@
     margin-right: -1px;
     /* background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ0FD0ZXBzd/wPAAjVAoxeSgrfdgNeAAAAAElFTkSuQmCC) right repeat-y */ 
 }
+
+/* deprecated */
+.ace_variable .ace_language .ace_invalid .ace_illegal {
+    text-decoration: line-through;
+    color: red;
+    background-color: inherit;
+}
