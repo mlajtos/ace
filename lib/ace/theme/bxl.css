@@ -161,7 +161,7 @@
 }
 
 /* deprecated */
-.ace_variable .ace_language .ace_invalid .ace_illegal {
+.ace_variable.ace_language.ace_invalid.ace_illegal {
     text-decoration: line-through;
     color: red;
     background-color: inherit;
