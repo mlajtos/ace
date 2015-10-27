@@ -167,13 +167,13 @@
     background-color: inherit;
 }
 
-.ace-bxl.comment.documentation{
+.ace-bxl .ace_comment.ace_documentation{
     color: #F92626;
 }
 
-.ace-bxl.ace_comment.ace_documentation.ace_alternative{
+.ace-bxl .ace_comment.ace_documentation.ace_alternative{
     color: #879EFA;
 }
-.ace-bxl.ace_comment.ace_documentation.ace_mention{
+.ace-bxl .ace_comment.ace_documentation.ace_mention{
     // TODO
 }
