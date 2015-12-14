@@ -1,3 +1,5 @@
+# scope: bxl
+
 
 # math agent
 
@@ -393,8 +395,50 @@ snippet server.session
 		/tree = ${3:tmp/tree};
 	};
 
+# ide agent
+
+snippet ide.createInstance
+	ide.createInstance{
+		/typePath${1:app/meh} = null;
+		/config = tmp/config; // optional
+	};
+
+snippet ide.getConfigType
+	ide.getConfigType(${1:tmp/config});
+
+snippet ide.getModuleType
+	ide.getModuleType(${1:tmp/config});
+
+snippet ide.isNewIde
+	ide.isNewIde();
+
+snippet ide.moduleInstanceOfPath
+	ide.moduleInstanceOfPath{
+		/module = ${1:tmp/module};
+		/parent = ${2:tmp/parent};
+	}
+
+snippet ide.moduleTypeOfPath
+	ide.moduleTypeOfPath{
+		/module = ${1:tmp/module};
+		/typePath = ${2:tmp/typePath};
+	}
+
+snippet ide.pathInstanceOfPath
+	ide.pathInstanceOfPath{
+		/module = ${1:tmp/module};
+		/parent = ${2:tmp/parent};
+	}
+
+snippet ide.registerCode
+	ide.registerCode{
+		/app = tmp/app;
+		/lib = tmp/lib; // only one
+	}
+
+
 # if else
-snippet if
+snippet ifelse
 	if (${1:true}) {
 		${2}
 	} else {
@@ -415,18 +459,32 @@ snippet while
 		${1} = ${1} + 1;
 	}
 
+snippet dataCondition
+	{
+		/name = ${1:"name"};
+		/condType/${2:equal} = null;
+		/valueType/${3:string} = null;
+		/value = ${4:"hello world"};
+	}
+
+snippet tryCatch
+	try{
+	  throw/${1:exception}{
+	    /message = "Additional message";
+	  };
+	} catch/$1 {
+	  log(loc/message);
+	}
+
 # module operation call
 snippet $
 	\$${1:module}.${2:operation}{
 		${3}
 	};
 
-# getContent
-snippet getContent
-	\$${1:modulePath}.getContent{
-		/urlPath = in/urlPath/${2:moduleName};
-		/urlContext[in/urlContext]/${2} = null;
-		/paramTree = in/paramTree/${2};
-		/sessionTree = in/sessionTree/${2};
-		/dataTree = in/dataTree;
-	};
+snippet formMessage
+	{
+		/type/${1:"warning"} = null;
+		/message = ${2:"message"};
+		/reasons = ${3:"reasons"};
+	}
