@@ -4,153 +4,153 @@
 # math agent
 
 snippet math.floor
-	math.floor(${1});
+	math.floor(${1})
 
 snippet math.ceil
-	math.ceil(${1});
+	math.ceil(${1})
 
 snippet math.random
-	math.random();
+	math.random()
 
 snippet math.round
-	math.round(${1});
+	math.round(${1})
 
 # is agent
 
 snippet is.module
-	is.module(${1});
+	is.module(${1})
 
 snippet is.subNodes
-	is.subNodes(${1});
+	is.subNodes(${1})
 
 snippet is.typeBoolean
-	is.typeBoolean(${1});
+	is.typeBoolean(${1})
 
 snippet is.typeDate
-	is.typeDate(${1});
+	is.typeDate(${1})
 
 snippet is.typeDatetime
-	is.typeDatetime(${1});
+	is.typeDatetime(${1})
 
 snippet is.typeDouble
-	is.typeDouble(${1});
+	is.typeDouble(${1})
 
 snippet is.typeDecimal
-	is.typeDecimal(${1});
+	is.typeDecimal(${1})
 
 snippet is.typeInt
-	is.typeInt(${1});
+	is.typeInt(${1})
 
 snippet is.typeLong
-	is.typeLong(${1});
+	is.typeLong(${1})
 
 snippet is.typeNode
-	is.typeNode(${1});
+	is.typeNode(${1})
 
 snippet is.typeString
-	is.typeString(${1});
+	is.typeString(${1})
 
 snippet is.typeTime
-	is.typeTime(${1});
+	is.typeTime(${1})
 
 snippet is.typeValueNN
-	is.typeValueNN(${1});
+	is.typeValueNN(${1})
 
 snippet is.valueNE
-	is.valueNE(${1});
+	is.valueNE(${1})
 
 snippet is.valueDatetime
-	is.valueDatetime(${1});
+	is.valueDatetime(${1})
 
 snippet is.valueDate
-	is.valueDate(${1});
+	is.valueDate(${1})
 
 snippet is.valueTime
-	is.valueTime(${1});
+	is.valueTime(${1})
 
 snippet is.valueBoolean
-	 is.valueBoolean(${1});
+	 is.valueBoolean(${1})
 
 snippet is.valueDouble
-	is.valueDouble(${1});
+	is.valueDouble(${1})
 
 snippet is.valueDoubleNZ
-	is.valueDoubleNZ(${1});
+	is.valueDoubleNZ(${1})
 
 snippet is.valueDecimal
-	is.valueDecimal(${1});
+	is.valueDecimal(${1})
 
 snippet is.valueInt
-	is.valueInt(${1});
+	is.valueInt(${1})
 
 snippet is.valueIntNZ
-	is.valueIntNZ(${1});
+	is.valueIntNZ(${1})
 
 snippet is.valueLong
-	is.valueLong(${1});
+	is.valueLong(${1})
 
 snippet is.valuePathNE
-	is.valuePathNE(${1});
+	is.valuePathNE(${1})
 
 snippet is.valueString
-	is.valueString(${1});
+	is.valueString(${1})
 
 snippet is.valueStringNE
-	is.valueStringNE(${1});
+	is.valueStringNE(${1})
 
 # path agent
 
 snippet path.items
-	path.items(${1});
+	path.items(${1})
 
 snippet path.join
-	path.join(${1});
+	path.join(${1})
 
 snippet path.key
-	path.key(${1});
+	path.key(${1})
 
 snippet path.length
-	path.length(${1});
+	path.length(${1})
 
 snippet path.pathToTreeFocus
-	path.pathToTreeFocus(${1});
+	path.pathToTreeFocus(${1})
 
 snippet path.treeFocusToPath
-	path.treeFocusToPath(${1});
+	path.treeFocusToPath(${1})
 
 snippet path.split
 	path.split{
 		/path = ${1};
 		/key = ${2};
-	};
+	}
 
 snippet path.keyAt
 	path.keyAt{
 		/path = ${1};
 		/index = ${2};
-	};
+	}
 
 snippet path.keyLast
-	path.keyLast(${1});
+	path.keyLast(${1})
 
 snippet path.subPath
 	path.subPath{
 		/path = ${1};
 		/beginIndex = ${2};
 		/endIndex = ${3};
-	};
+	}
 
 snippet path.tail
-	path.tail(${1});
+	path.tail(${1})
 
 snippet path.val
-	path.val(${1});
+	path.val(${1})
 
 snippet path.keyDelete
 	path.keyDelete{
 		/path = ${1};
 		/key = ${2};
-	};
+	}
 
 # date agent
 
@@ -166,22 +166,22 @@ snippet date.add
 	}
 
 snippet date.dateToStruct
-	date.dateToStruct(${1});
+	date.dateToStruct(${1})
 
 snippet date.datetimeToStruct
-	date.datetimeToStruct(${1});
+	date.datetimeToStruct(${1})
 
 snippet date.now
-	date.now();
+	date.now()
 
 snippet date.parseDatetime
-	date.parseDatetime(${1});
+	date.parseDatetime(${1})
 
 snippet date.parseDate
-	date.parseDate(${1});
+	date.parseDate(${1})
 
 snippet date.parseTime
-	date.parseTime(${1});
+	date.parseTime(${1})
 
 # tree agent
 
@@ -189,55 +189,55 @@ snippet tree.add
 	tree.add{
 		/tree = ${1};
 		/add = ${2};
-	};
+	}
 
 snippet tree.count
-	tree.count(${1});
+	tree.count(${1})
 
 snippet tree.dumpToBxl
-	tree.dumpToBxl(${1});
+	tree.dumpToBxl(${1})
 
 snippet tree.dumpToString
-	tree.dumpToString(${1});
+	tree.dumpToString(${1})
 
 snippet tree.keyDelete
 	tree.keyDelete{
 		/tree = ${1};
 		/key = ${2};
-	};
+	}
 
 snippet tree.keyFirst
-	tree.keyFirst(${1});
+	tree.keyFirst(${1})
 
 snippet tree.keyLast
-	tree.keyLast(${1});
+	tree.keyLast(${1})
 
 snippet tree.keyMoveDown
 	tree.keyMoveDown{
 		/tree = ${1};
 		/key = ${2};
 		/cycle = true;
-	};
+	}
 
 snippet tree.keyMoveUp
 	tree.keyMoveUp{
 		/tree = ${1};
 		/key = ${2};
 		/cycle = true;
-	};
+	}
 
 snippet tree.keyNext
 	tree.keyNext{
 		/tree = ${1};
 		/key = ${2};
 		/cycle = true;
-	};
+	}
 
 snippet tree.keyPos
 	tree.keyPos{ 
 		/tree = ${1};
 		/key = ${2};
-	};
+	}
 
 snippet tree.keysDelete
 	tree.keysDelete{
@@ -245,7 +245,7 @@ snippet tree.keysDelete
 		/keys = {
 			${2}
 		};
-	};
+	}
 
 snippet tree.pathDelete
 	tree.pathDelete{
@@ -253,7 +253,7 @@ snippet tree.pathDelete
 		/path = {
 			${2}
 		};
-	};
+	}
 
 snippet tree.reverse
 	tree.reverse(${1});
@@ -263,7 +263,7 @@ snippet tree.subtree
 		/tree = ${1};
 		/beginIndex = ${2};
 		/endIndex = ${3};
-	};
+	}
 
 snippet tree.keyInsert
 	tree.keyInsert{
@@ -271,7 +271,7 @@ snippet tree.keyInsert
 		/key = ${2};
 		/addTree = ${3};
 		/afterKey = ${4};
-	};
+	}
 
 # str agent
 
@@ -286,51 +286,51 @@ snippet str.contains
 		/string = ${1:"hello world"};
 		/substring = ${2:"ello"};
 		/ignoreCase = true;
-	};
+	}
 
 snippet str.endsWith
 	str.endsWith{
 		/string = ${1:"Hello"};
 		/suffix= ${2:"lo"};
-	};
+	}
 
 snippet str.extractDiacritics
-	str.extractDiacritics(${1:"héľĺó wôřlď"});
+	str.extractDiacritics(${1:"héľĺó wôřlď"})
 
 snippet str.format
 	str.format{
-		/string = ${1};
+		/string = ${1:"Hello %%name%%"};
 		/params{
-			${2}
+			${2:/name = "World"}
 		};
-	};
+	}
 
 snippet str.find
 	str.find{ 
 		/string = ${1:"hello world"}; 
 		/regex = ${2:"[a-z]"}; 
-	};
+	}
 
 snippet str.hashMD5
-	str.hashMD5(${1:"Hello World"});
+	str.hashMD5(${1:"Hello World"})
 
 snippet str.hashSHA1
-	str.hashSHA1(${1:"Hello World"});
+	str.hashSHA1(${1:"Hello World"})
 
 snippet str.htmlEncode
-	str.htmlEncode(${1});
+	str.htmlEncode(${1})
 
 snippet str.initCap
-	str.initCap(${1});
+	str.initCap(${1})
 
 snippet str.join
 	str.join{
 		/strings = ${1};
 		/delimiter = ${2};
-	};
+	}
 
 snippet str.length
-	str.length(${1:"Hello World"});
+	str.length(${1:"Hello World"})
 
 snippet str.justify
 	str.justify{
@@ -338,20 +338,20 @@ snippet str.justify
 		/length = ${2};
 		/char = ${3};
 		/type/center = ${4:true};
-	};
+	}
 
 snippet str.replace
 	str.replace{
 		/string = ${1:"Hello World"};
 		/regex = ${3:"World"};
 		/replacement = ${2:"BXL"};
-	};
+	}
 
 snippet str.split
 	str.split{
 		/string = ${1:"Hello World"};
 		/regex = ${2:" "};
-	};
+	}
 
 snippet str.replaceParams
 	str.replaceParams{
@@ -359,41 +359,41 @@ snippet str.replaceParams
 		/params{
 			/${2:param} = ${3:"world"};
 		};
-	};
+	}
 
 snippet str.substring
 	str.substring{
 		/string = ${1:"Hello World"};
 		/beginIndex = ${2:0};
 		/endIndex = ${3:4};
-	};
+	}
 
 snippet str.toLowerCase
-	str.toLowerCase(${1:"HELLO WORLD"});
+	str.toLowerCase(${1:"HELLO WORLD"})
 
 snippet str.toUpperCase
-	str.toUpperCase(${1:"hello world"});
+	str.toUpperCase(${1:"hello world"})
 
 snippet str.trim
-	str.trim(${1:"   hello world   "});
+	str.trim(${1:"   hello world   "})
 
 snippet str.startsWith
 	str.startsWith{
 		/string = ${1:"Hello World"};
 		/prefix= ${2:"Hell"};
-	};
+	}
 
 # server agent
 
 snippet server.getParam
-	server.getParam(${1});
+	server.getParam(${1})
 
 snippet server.session
 	server.session{
 		/context[${1:in/urlContext}] = null;
 		/operation = "${2:read}";
 		/tree = ${3:tmp/tree};
-	};
+	}
 
 # ide agent
 
@@ -401,16 +401,16 @@ snippet ide.createInstance
 	ide.createInstance{
 		/typePath${1:app/meh} = null;
 		/config = tmp/config; // optional
-	};
+	}
 
 snippet ide.getConfigType
-	ide.getConfigType(${1:tmp/config});
+	ide.getConfigType(${1:tmp/config})
 
 snippet ide.getModuleType
-	ide.getModuleType(${1:tmp/config});
+	ide.getModuleType(${1:tmp/config})
 
 snippet ide.isNewIde
-	ide.isNewIde();
+	ide.isNewIde()
 
 snippet ide.moduleInstanceOfPath
 	ide.moduleInstanceOfPath{
