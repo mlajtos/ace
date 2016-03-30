@@ -188,3 +188,133 @@
     cursor: pointer !important;
     pointer-events: auto;
 }
+
+
+
+
+/*
+    Dark version
+*/
+
+
+body.dark .ace-bxl .ace_gutter {
+  background: #2F3129;
+  color: #8F908A
+}
+
+body.dark .ace-bxl .ace_print-margin {
+  width: 1px;
+  background: #555651
+}
+
+body.dark .ace-bxl {
+  background-color: #272822;
+  color: #F8F8F2
+}
+
+body.dark .ace-bxl .ace_cursor {
+  color: #F8F8F0
+}
+
+body.dark .ace-bxl .ace_marker-layer .ace_selection {
+  background: #49483E
+}
+
+body.dark .ace-bxl.ace_multiselect .ace_selection.ace_start {
+  box-shadow: 0 0 3px 0px #272822;
+}
+
+body.dark .ace-bxl .ace_marker-layer .ace_step {
+  background: rgb(102, 82, 0)
+}
+
+body.dark .ace-bxl .ace_marker-layer .ace_bracket {
+  margin: -1px 0 0 -1px;
+  border: 1px solid #49483E
+}
+
+body.dark .ace-bxl .ace_marker-layer .ace_active-line {
+  background: #202020
+}
+
+body.dark .ace-bxl .ace_gutter-active-line {
+  background-color: #272727
+}
+
+body.dark .ace-bxl .ace_marker-layer .ace_selected-word {
+  border: 1px solid #49483E
+}
+
+body.dark .ace-bxl .ace_invisible {
+  color: #52524d
+}
+
+body.dark .ace-bxl .ace_entity.ace_name.ace_tag,
+body.dark .ace-bxl .ace_keyword,
+body.dark .ace-bxl .ace_meta.ace_tag,
+body.dark .ace-bxl .ace_storage {
+  color: #F92672
+}
+
+body.dark .ace-bxl .ace_punctuation,
+body.dark .ace-bxl .ace_punctuation.ace_tag {
+  color: #fff
+}
+
+body.dark .ace-bxl .ace_constant.ace_character,
+body.dark .ace-bxl .ace_constant.ace_language,
+body.dark .ace-bxl .ace_constant.ace_numeric,
+body.dark .ace-bxl .ace_constant.ace_other {
+  color: #AE81FF
+}
+
+body.dark .ace-bxl .ace_invalid {
+  color: #F8F8F0;
+  background-color: #F92672
+}
+
+body.dark .ace-bxl .ace_invalid.ace_deprecated {
+  color: #F8F8F0;
+  background-color: #AE81FF
+}
+
+body.dark .ace-bxl .ace_support.ace_constant,
+body.dark .ace-bxl .ace_support.ace_function {
+  color: #66D9EF
+}
+
+body.dark .ace-bxl .ace_fold {
+  background-color: #A6E22E;
+  border-color: #F8F8F2
+}
+
+body.dark .ace-bxl .ace_storage.ace_type,
+body.dark .ace-bxl .ace_support.ace_class,
+body.dark .ace-bxl .ace_support.ace_type {
+  font-style: italic;
+  color: #66D9EF
+}
+
+body.dark .ace-bxl .ace_entity.ace_name.ace_function,
+body.dark .ace-bxl .ace_entity.ace_other,
+body.dark .ace-bxl .ace_entity.ace_other.ace_attribute-name,
+body.dark .ace-bxl .ace_variable {
+  color: #A6E22E
+}
+
+body.dark .ace-bxl .ace_variable.ace_parameter {
+  font-style: italic;
+  color: #FD971F
+}
+
+body.dark .ace-bxl .ace_string {
+  color: #E6DB74
+}
+
+body.dark .ace-bxl .ace_comment {
+  color: #75715E
+}
+
+body.dark .ace-bxl .ace_indent-guide {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ0FD0ZXBzd/wPAAjVAoxeSgNeAAAAAElFTkSuQmCC) right repeat-y
+}
