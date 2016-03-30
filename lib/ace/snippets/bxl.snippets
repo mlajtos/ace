@@ -389,10 +389,16 @@ snippet server.getParam
 	server.getParam(${1})
 
 snippet server.session
-	server.session{
+	server.session.read{
 		/context[${1:in/urlContext}] = null;
-		/operation = "${2:read}";
-		/tree = ${3:tmp/tree};
+	}
+
+snippet server.session.write
+	server.session.write{
+		/context[${1:in/urlContext}] = null;
+		/tree = ${2:tmp/tree};
+	}
+
 	}
 
 # ide agent
