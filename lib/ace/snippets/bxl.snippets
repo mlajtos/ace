@@ -498,7 +498,9 @@ snippet $
 
 snippet formMessage
 	{
-		/type/${1:"warning"} = null;
-		/message = ${2:"message"};
-		/reasons = ${3:"reasons"};
+		/type/${1:warning} = null;
+		/message = ${2:"Message goes here."};
+		/reasons[]{
+			/message = ${3:"Optional reason goes here."}
+		};
 	}
