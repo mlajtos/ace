@@ -54,10 +54,9 @@
 /* END ??? */
 
 .ace-bxl.ace_editor{
-    border: 1px solid lightgray;
     border-radius: 4px;
     background-color: white;
-    margin-bottom: 1em;
+    color: black;
 }
 
 /* cursor */
@@ -112,7 +111,6 @@
 /* variable name */
 .ace-bxl .ace_variable {
   color: #879EFA;
-  font-weight: bold;
 }
 
 /* reserved words */
@@ -120,7 +118,6 @@
 .ace-bxl .ace_keyword.ace_control,
 .ace-bxl .ace_constant.ace_language {
   color: #7F0055;
-  font-weight: bold;
 }
 
 /* operators */
@@ -193,13 +190,13 @@
 
 
 /*
-    Dark version
+    Dark version – stolen from monokai
 */
 
-
 body.dark .ace-bxl .ace_gutter {
-  background: #2F3129;
-  color: #8F908A
+  background: #31373F;
+  color: #8F908A;
+  border-right: 1px solid #8c8c8c;
 }
 
 body.dark .ace-bxl .ace_print-margin {
@@ -208,7 +205,7 @@ body.dark .ace-bxl .ace_print-margin {
 }
 
 body.dark .ace-bxl {
-  background-color: #272822;
+  background-color: #272B30;
   color: #F8F8F2
 }
 
@@ -242,7 +239,10 @@ body.dark .ace-bxl .ace_gutter-active-line {
 }
 
 body.dark .ace-bxl .ace_marker-layer .ace_selected-word {
-  border: 1px solid #49483E
+  border: 1px solid #ffffff;
+  background-color: rgba(73, 73, 73, 0.54);
+  border-radius: 3px;
+  transform: scale(1.1);
 }
 
 body.dark .ace-bxl .ace_invisible {
@@ -317,4 +317,23 @@ body.dark .ace-bxl .ace_comment {
 
 body.dark .ace-bxl .ace_indent-guide {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ0FD0ZXBzd/wPAAjVAoxeSgNeAAAAAElFTkSuQmCC) right repeat-y
+}
+
+/* additional dark adjustments */
+
+body.dark .ace-bxl .ace_identifier.ace_tree {
+    color: #d6d6d6;
+}
+
+body.dark .ace-bxl .ace_autocomplete .ace_marker-layer .ace_active-line{
+    background-color: #515256;
+}
+
+body.dark .ace-bxl .ace_editor.ace_autocomplete .ace_completion-highlight{
+    color: #CEC107;
+}
+
+body.dark .ace-bxl .ace_indent-guide {
+    border-right: none;
+    margin-right: 0;
 }

@@ -1,153 +1,162 @@
 # scope: bxl
 
-
 # math agent
 
 snippet math.floor
-	math.floor(${1})
+	floor(${1:2.3})
 
 snippet math.ceil
-	math.ceil(${1})
-
-snippet math.random
-	math.random()
+	ceil(${1:2.3})
 
 snippet math.round
-	math.round(${1})
+	round(${1:2.3})
+
+snippet math.random
+	random()
+
+snippet math.randomInt
+	random{
+		/int = ${1:6};
+	}
+
+snippet math.randomLong
+	random{
+		/long = ${1:6};
+	}
 
 # is agent
 
 snippet is.module
-	is.module(${1})
+	module(${1})
 
 snippet is.subNodes
-	is.subNodes(${1})
+	subNodes(${1})
 
 snippet is.typeBoolean
-	is.typeBoolean(${1})
+	typeBoolean(${1})
 
 snippet is.typeDate
-	is.typeDate(${1})
+	typeDate(${1})
 
 snippet is.typeDatetime
-	is.typeDatetime(${1})
+	typeDatetime(${1})
 
 snippet is.typeDouble
-	is.typeDouble(${1})
+	typeDouble(${1})
 
 snippet is.typeDecimal
-	is.typeDecimal(${1})
+	typeDecimal(${1})
 
 snippet is.typeInt
-	is.typeInt(${1})
+	typeInt(${1})
 
 snippet is.typeLong
-	is.typeLong(${1})
+	typeLong(${1})
 
 snippet is.typeNode
-	is.typeNode(${1})
+	typeNode(${1})
 
 snippet is.typeString
-	is.typeString(${1})
+	typeString(${1})
 
 snippet is.typeTime
-	is.typeTime(${1})
+	typeTime(${1})
 
 snippet is.typeValueNN
-	is.typeValueNN(${1})
+	typeValueNN(${1})
 
 snippet is.valueNE
-	is.valueNE(${1})
+	valueNE(${1})
 
 snippet is.valueDatetime
-	is.valueDatetime(${1})
+	valueDatetime(${1})
 
 snippet is.valueDate
-	is.valueDate(${1})
+	valueDate(${1})
 
 snippet is.valueTime
-	is.valueTime(${1})
+	valueTime(${1})
 
 snippet is.valueBoolean
-	 is.valueBoolean(${1})
+	valueBoolean(${1})
 
 snippet is.valueDouble
-	is.valueDouble(${1})
+	valueDouble(${1})
 
 snippet is.valueDoubleNZ
-	is.valueDoubleNZ(${1})
+	valueDoubleNZ(${1})
 
 snippet is.valueDecimal
-	is.valueDecimal(${1})
+	valueDecimal(${1})
 
 snippet is.valueInt
-	is.valueInt(${1})
+	valueInt(${1})
 
 snippet is.valueIntNZ
-	is.valueIntNZ(${1})
+	valueIntNZ(${1})
 
 snippet is.valueLong
-	is.valueLong(${1})
+	valueLong(${1})
 
 snippet is.valuePathNE
-	is.valuePathNE(${1})
+	valuePathNE(${1})
 
 snippet is.valueString
-	is.valueString(${1})
+	valueString(${1})
 
 snippet is.valueStringNE
-	is.valueStringNE(${1})
+	valueStringNE(${1})
 
 # path agent
 
 snippet path.items
-	path.items(${1})
+	items(${1})
 
 snippet path.join
-	path.join(${1})
+	join(${1})
 
 snippet path.key
-	path.key(${1})
+	key(${1})
 
 snippet path.length
-	path.length(${1})
+	length(${1})
 
 snippet path.pathToTreeFocus
-	path.pathToTreeFocus(${1})
+	pathToTreeFocus(${1})
 
 snippet path.treeFocusToPath
-	path.treeFocusToPath(${1})
+	treeFocusToPath(${1})
 
 snippet path.split
-	path.split{
+	split{
 		/path = ${1};
 		/key = ${2};
 	}
 
 snippet path.keyAt
-	path.keyAt{
+	keyAt{
 		/path = ${1};
 		/index = ${2};
 	}
 
 snippet path.keyLast
-	path.keyLast(${1})
+	keyLast(${1})
 
 snippet path.subPath
-	path.subPath{
+	subPath{
 		/path = ${1};
 		/beginIndex = ${2};
 		/endIndex = ${3};
 	}
 
 snippet path.tail
-	path.tail(${1})
+	tail(${1})
 
 snippet path.val
-	path.val(${1})
+	val(${1})
 
 snippet path.keyDelete
-	path.keyDelete{
+	keyDelete{
 		/path = ${1};
 		/key = ${2};
 	}
@@ -155,7 +164,7 @@ snippet path.keyDelete
 # date agent
 
 snippet date.add
-	date.add{
+	add{
 		/datetime = ${1};
 		/year = ${2};
 		/month = ${3};
@@ -166,107 +175,105 @@ snippet date.add
 	}
 
 snippet date.dateToStruct
-	date.dateToStruct(${1})
+	dateToStruct(${1})
 
 snippet date.datetimeToStruct
-	date.datetimeToStruct(${1})
+	datetimeToStruct(${1})
 
 snippet date.now
-	date.now()
+	now()
 
 snippet date.parseDatetime
-	date.parseDatetime(${1})
+	parseDatetime(${1})
 
 snippet date.parseDate
-	date.parseDate(${1})
+	parseDate(${1})
 
 snippet date.parseTime
-	date.parseTime(${1})
+	parseTime(${1})
 
 # tree agent
 
 snippet tree.add
-	tree.add{
+	add{
 		/tree = ${1};
 		/add = ${2};
 	}
 
 snippet tree.count
-	tree.count(${1})
+	count(${1})
 
 snippet tree.dumpToBxl
-	tree.dumpToBxl(${1})
+	dumpToBxl(${1})
 
 snippet tree.dumpToString
-	tree.dumpToString(${1})
+	dumpToString(${1})
 
 snippet tree.keyDelete
-	tree.keyDelete{
+	keyDelete{
 		/tree = ${1};
 		/key = ${2};
 	}
 
 snippet tree.keyFirst
-	tree.keyFirst(${1})
+	keyFirst(${1})
 
 snippet tree.keyLast
-	tree.keyLast(${1})
+	keyLast(${1})
 
 snippet tree.keyMoveDown
-	tree.keyMoveDown{
+	keyMoveDown{
 		/tree = ${1};
 		/key = ${2};
 		/cycle = true;
 	}
 
 snippet tree.keyMoveUp
-	tree.keyMoveUp{
+	keyMoveUp{
 		/tree = ${1};
 		/key = ${2};
 		/cycle = true;
 	}
 
 snippet tree.keyNext
-	tree.keyNext{
+	keyNext{
 		/tree = ${1};
 		/key = ${2};
 		/cycle = true;
 	}
 
 snippet tree.keyPos
-	tree.keyPos{ 
+	keyPos{ 
 		/tree = ${1};
 		/key = ${2};
 	}
 
 snippet tree.keysDelete
-	tree.keysDelete{
+	keysDelete{
 		/tree = ${1};
-		/keys = {
+		/keys{
 			${2}
 		};
 	}
 
 snippet tree.pathDelete
-	tree.pathDelete{
+	pathDelete{
 		/tree = ${1};
-		/path = {
-			${2}
-		};
+		/path = ${2};
 	}
 
 snippet tree.reverse
-	tree.reverse(${1});
+	reverse(${1});
 
 snippet tree.subtree
-	tree.subtree{
+	subtree{
 		/tree = ${1};
 		/beginIndex = ${2};
 		/endIndex = ${3};
 	}
 
 snippet tree.keyInsert
-	tree.keyInsert{
+	keyInsert{
 		/tree = ${1};
 		/key = ${2};
 		/addTree = ${3};
@@ -276,29 +283,29 @@ snippet tree.keyInsert
 # str agent
 
 snippet str.base64decode
-	str.base64decode(${1:"QlhM"})
+	base64decode(${1:"QlhM"})
 
 snippet str.base64encode
-	str.base64encode(${1:"Hello World!"})
+	base64encode(${1:"Hello World!"})
 
 snippet str.contains
-	str.contains{
+	contains{
 		/string = ${1:"hello world"};
 		/substring = ${2:"ello"};
 		/ignoreCase = true;
 	}
 
 snippet str.endsWith
-	str.endsWith{
+	endsWith{
 		/string = ${1:"Hello"};
 		/suffix= ${2:"lo"};
 	}
 
 snippet str.extractDiacritics
-	str.extractDiacritics(${1:"héľĺó wôřlď"})
+	extractDiacritics(${1:"héľĺó wôřlď"})
 
 snippet str.format
-	str.format{
+	format{
 		/string = ${1:"Hello %%name%%"};
 		/params{
 			${2:/name = "World"}
@@ -306,34 +313,34 @@ snippet str.format
 	}
 
 snippet str.find
-	str.find{ 
+	find{ 
 		/string = ${1:"hello world"}; 
 		/regex = ${2:"[a-z]"}; 
 	}
 
 snippet str.hashMD5
-	str.hashMD5(${1:"Hello World"})
+	hashMD5(${1:"Hello World"})
 
 snippet str.hashSHA1
-	str.hashSHA1(${1:"Hello World"})
+	hashSHA1(${1:"Hello World"})
 
 snippet str.htmlEncode
-	str.htmlEncode(${1})
+	htmlEncode(${1})
 
 snippet str.initCap
-	str.initCap(${1})
+	initCap(${1})
 
 snippet str.join
-	str.join{
+	join{
 		/strings = ${1};
 		/delimiter = ${2};
 	}
 
 snippet str.length
-	str.length(${1:"Hello World"})
+	length(${1:"Hello World"})
 
 snippet str.justify
-	str.justify{
+	justify{
 		/string = ${1};
 		/length = ${2};
 		/char = ${3};
@@ -341,20 +348,20 @@ snippet str.justify
 	}
 
 snippet str.replace
-	str.replace{
+	replace{
 		/string = ${1:"Hello World"};
 		/regex = ${3:"World"};
 		/replacement = ${2:"BXL"};
 	}
 
 snippet str.split
-	str.split{
+	split{
 		/string = ${1:"Hello World"};
 		/regex = ${2:" "};
 	}
 
 snippet str.replaceParams
-	str.replaceParams{
+	replaceParams{
 		/string = ${1:"Hello %%param%%"};
 		/params{
 			/${2:param} = ${3:"world"};
@@ -362,23 +369,23 @@ snippet str.replaceParams
 	}
 
 snippet str.substring
-	str.substring{
+	substring{
 		/string = ${1:"Hello World"};
 		/beginIndex = ${2:0};
 		/endIndex = ${3:4};
 	}
 
 snippet str.toLowerCase
-	str.toLowerCase(${1:"HELLO WORLD"})
+	toLowerCase(${1:"HELLO WORLD"})
 
 snippet str.toUpperCase
-	str.toUpperCase(${1:"hello world"})
+	toUpperCase(${1:"hello world"})
 
 snippet str.trim
-	str.trim(${1:"   hello world   "})
+	trim(${1:"   hello world   "})
 
 snippet str.startsWith
-	str.startsWith{
+	startsWith{
 		/string = ${1:"Hello World"};
 		/prefix= ${2:"Hell"};
 	}
@@ -386,15 +393,15 @@ snippet str.startsWith
 # server agent
 
 snippet server.getParam
-	server.getParam(${1})
+	getParam(${1})
 
 snippet server.session
-	server.session.read{
+	session.read{
 		/context[${1:in/urlContext}] = null;
 	}
 
 snippet server.session.write
-	server.session.write{
+	session.write{
 		/context[${1:in/urlContext}] = null;
 		/tree = ${2:tmp/tree};
 	}
@@ -412,40 +419,40 @@ snippet java
 # ide agent
 
 snippet ide.createInstance
-	ide.createInstance{
+	createInstance{
 		/typePath${1:app/meh} = null;
 		/config = tmp/config; // optional
 	}
 
 snippet ide.getConfigType
-	ide.getConfigType(${1:tmp/config})
+	getConfigType(${1:tmp/config})
 
 snippet ide.getModuleType
-	ide.getModuleType(${1:tmp/config})
+	getModuleType(${1:tmp/config})
 
 snippet ide.isNewIde
-	ide.isNewIde()
+	isNewIde()
 
 snippet ide.moduleInstanceOfPath
-	ide.moduleInstanceOfPath{
+	moduleInstanceOfPath{
 		/module = ${1:tmp/module};
 		/parent = ${2:tmp/parent};
 	}
 
 snippet ide.moduleTypeOfPath
-	ide.moduleTypeOfPath{
+	moduleTypeOfPath{
 		/module = ${1:tmp/module};
 		/typePath = ${2:tmp/typePath};
 	}
 
 snippet ide.pathInstanceOfPath
-	ide.pathInstanceOfPath{
+	pathInstanceOfPath{
 		/module = ${1:tmp/module};
 		/parent = ${2:tmp/parent};
 	}
 
 snippet ide.registerCode
-	ide.registerCode{
+	registerCode{
 		/app = tmp/app;
 		/lib = tmp/lib; // only one
 	}
@@ -473,14 +480,6 @@ snippet while
 		${1} = ${1} + 1;
 	}
 
-snippet dataCondition
-	{
-		/name = ${1:"name"};
-		/condType/${2:equal} = null;
-		/valueType/${3:string} = null;
-		/value = ${4:"hello world"};
-	}
-
 snippet tryCatch
 	try{
 	  throw/${1:exception}{
@@ -490,17 +489,117 @@ snippet tryCatch
 	  log(loc/message);
 	}
 
+snippet switch
+	switch(${1:tmp/greeting}) {
+	  case "${2:hello}":
+	    ${3:// code}
+	    break;
+	  default:
+	  	${4:// code}
+	  	break;
+	}
+
 # module operation call
 snippet $
 	\$${1:module}.${2:operation}{
 		${3}
 	};
 
-snippet formMessage
-	{
+snippet _formMessages
+	/messsages[]{
 		/type/${1:warning} = null;
 		/message = ${2:"Message goes here."};
 		/reasons[]{
 			/message = ${3:"Optional reason goes here."}
 		};
+	}
+
+snippet _dataConditions
+	/conds[]{
+		/name = ${1:"name"};
+		/condType/${2:equal} = null;
+		/valueType/${3:string} = null;
+		/value = ${4:"hello world"};
+	};
+
+snippet _dataOrders
+	/orders[]{
+		/name = ${1:"name"};
+		/orderType/desc = true;
+	};
+
+snippet _dataRange
+	/range{
+		/countAll = false;
+	};
+
+guard tmp/listOutput\s*
+trigger =\s*
+snippet _lO
+	= \$${1:tmp/datatype}.list{
+		${2:_dataRange}
+		${3:_dataConditions}
+		${4:_dataOrders}
+	};
+
+	if (!tmp/listOutput/ok) {
+		warning("Cannot perform \"list\" operation on datatype.");
+		return;
+	}
+
+guard tmp/addOutput\s*
+trigger =\s*
+snippet _aO
+	= \$${1:tmp/datatype}.add{
+		/addID = ${2:23};
+		/addData = ${3:tmp/data};
+		/addOptions/canUpdateRecord = null;
+	};
+
+	if (!tmp/addOutput/ok) {
+		warning("Cannot perform \"add\" operation on datatype.");
+		return;
+	}
+
+guard tmp/updateOutput\s*
+trigger =\s*
+snippet _uO
+	= \$${1:tmp/datatype}.update{
+		/updateID = ${2:23};
+		/updateData = ${3:tmp/data};
+		/updateOptions/canNotExist/canAddRecord = null;
+		${4:_dataConditions}
+	};
+
+	if (!tmp/updateOutput/ok) {
+		warning("Cannot perform \"update\" operation on datatype.");
+		return;
+	}
+
+guard tmp/deleteOutput\s*
+trigger =\s*
+snippet _dO
+	= \$${1:tmp/datatype}.delete{
+		/deleteID = ${2:23};
+		/deleteOptions/canNotExist = null;
+		${4:_dataConditions}
+	};
+
+	if (!tmp/deleteOutput/ok) {
+		warning("Cannot perform \"delete\" operation on datatype.");
+		return;
+	}
+
+guard tmp/readOutput\s*
+trigger =\s*
+snippet _rO
+	= \$${1:tmp/datatype}.read{
+		/readID = ${2:23};
+		/readOptions/canNotExist = null;
+		${4:_dataConditions}
+	};
+
+	if (!tmp/readOutput/ok) {
+		warning("Cannot perform \"read\" operation on datatype.");
+		return;
 	}
